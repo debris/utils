@@ -8,7 +8,7 @@ include(EthPolicy)
 eth_policy()
 
 # project name and version should be set after cmake_policy CMP0048
-project(dev VERSION "0.9.91")
+project(utils VERSION "0.9.91")
 
 include(EthCompilerSettings)
 
@@ -16,10 +16,6 @@ include(EthExecutableHelper)
 
 include(EthDependencies)
 
-include(buildinfo.cmake)
-create_build_info()
-
-add_subdirectory(json_spirit)
 add_subdirectory(libscrypt)
 
 if (NOT DEFINED MSVC)
